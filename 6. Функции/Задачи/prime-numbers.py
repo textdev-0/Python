@@ -16,7 +16,7 @@ while primesFound != amountOfPrimes:
     currentNumber += 1
     if isItPrime(currentNumber):
         primesFound += 1
-        whatPrimes += str(f'{currentNumber} ')
+        whatPrimes += str(f'{currentNumber}\n')
 print('Done!')
 
 print()
