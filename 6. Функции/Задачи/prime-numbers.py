@@ -1,6 +1,7 @@
 print('Number of primes:')
 amountOfPrimes = int(input('>> '))
 print()
+print('Finding primes...')
 
 def isItPrime(number=1):
     for i in range(2, number):
@@ -16,7 +17,10 @@ while primesFound != amountOfPrimes:
     if isItPrime(currentNumber):
         primesFound += 1
         whatPrimes += str(f'{currentNumber} ')
+print('Done!')
 
-print('Primes found:')
+print()
+print('Writing primes to file primes.txt...')
 with open('primes.txt', 'w') as file:
     file.write(whatPrimes)
+print('Finished!')
